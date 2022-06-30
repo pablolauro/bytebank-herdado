@@ -1,16 +1,14 @@
-//Gerente herda do Funcionario
-public class Gerente extends Funcionario implements Autenticavel {
+
+public class Administrador extends Funcionario implements Autenticavel {
+	
 	private int senha;
 	
-    //novo método, recebendo dois params
-    public boolean autentica(String login, int senha) {
-        return true;
-    }	
-	
+	@Override
 	public double getBonificacao() {
-		return super.getSalario();
+		// TODO Auto-generated method stub
+		return 50;
 	}
-
+	
 	@Override
 	public boolean autentica(int senha) {
 		if (this.senha == senha) {
@@ -25,6 +23,5 @@ public class Gerente extends Funcionario implements Autenticavel {
 		// TODO Auto-generated method stub
 		this.senha = senha;		
 	}
-	
-	
+
 }

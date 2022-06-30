@@ -4,7 +4,7 @@ public class TesteFuncionario {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		Funcionario func = new Funcionario();
+		Gerente func = new Gerente();
 		
 		func.setNome("Pablo Lauro");
 		func.setCpf("256365489-9");

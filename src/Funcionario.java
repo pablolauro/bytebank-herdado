@@ -1,14 +1,13 @@
 
-public class Funcionario {
+//Não pode criar objetos dessa classe, pois é abstrata
+public abstract class Funcionario {
 	
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-	
-	public double getBonificacao() {
-		return salario * 0.05;
-	}	
+	//metodo sem corpo, sem implementação
+	public abstract double getBonificacao(); 
 	
 	public String getNome() {
 		return nome;
@@ -29,5 +28,9 @@ public class Funcionario {
 		this.salario = salario;
 	}
 	
+	
+	public void teste() {
+		System.out.println("Funcionario");
+	}
 	
 }
